@@ -1,6 +1,6 @@
 Ansible role to install and configure AWS Cloudwatch Agent on both Windows and Linux
 
-[![Build Status](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent.svg?branch=master)](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent)
+[![Build Status](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent.svg?branch=main)](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent)
 
 ## Requirements
 
@@ -12,15 +12,15 @@ Available variables are listed below, along with default values (see `defaults/m
 
 Windows EventLog Monitoring
 ```
-aws_cw_windows_events: 
+aws_cw_windows_events:
 	- name: 'System'
 	  levels: ['ERROR', 'CRITICAL']
 	  format: 'text'
-	  log_group: 'Windows/System'            
+	  log_group: 'Windows/System'
 	- name: 'Application'
 	  levels: ['ERROR']
 	  format: 'text'
-	  log_group: 'Windows/Application' 
+	  log_group: 'Windows/Application'
 ```
 
 Log files Monitoring
@@ -29,8 +29,8 @@ aws_cw_logfiles
  - path: /var/log/auth.log
    timestamp_format: "%b %d %H:%M:%S"
    log_group: "auth"
-```	 
-   
+```
+
 Allows to use custom cloudwatch template e.g. the following can be put same level as the playbook
 ```
 aws_cw_config_template_path: 'templates/CloudwatchConfig.json'
