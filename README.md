@@ -1,6 +1,6 @@
 Ansible role to install and configure AWS Cloudwatch Agent on both Windows and Linux
 
-[![Build Status](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent.svg?branch=main)](https://travis-ci.org/riponbanik/ansible-role-aws-cloudwatch-agent)
+[![Build Status](https://travis-ci.org/deekayen/ansible-role-aws-cloudwatch-agent.svg?branch=main)](https://travis-ci.org/deekayen/ansible-role-aws-cloudwatch-agent)
 
 ## Requirements
 
